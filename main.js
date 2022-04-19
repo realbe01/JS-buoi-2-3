@@ -41,11 +41,12 @@ document.getElementById("btnDoi").onclick = function () {
 
 // Bài toán 4
 document.getElementById("btnPhepTinh").onclick = function () {
-  var chieuDaiCN = document.getElementById("chieuDai").value;
-  var chieuRongCN = document.getElementById("chieuRong").value;
+  var chieuDaiCN = document.getElementById("chieuDai").value * 1;
+  var chieuRongCN = document.getElementById("chieuRong").value * 1;
 
   var dienTich = chieuDaiCN * chieuRongCN;
   var chuVi = (chieuDaiCN + chieuRongCN) * 2;
+
   var result =
     "Diện tích hình chữ nhật là: " +
     dienTich +
@@ -66,7 +67,6 @@ document.getElementById("btnKetQua").onclick = function () {
   var result = "Tổng 2 số ký là: " + tong2SoKy;
 
   document.getElementById("footerKetQua").innerHTML = result;
-  document.getElementById("footerKetQua").classList.add("alert-danger");
 
   //   int so_hang_dv =so% 10;
   //   int so_hang_chuc =so/ 10;
